@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container,
                 FragmentDetail.createFragmentDetail(data))
+            .addToBackStack(null)
             .commit()
     }
 
