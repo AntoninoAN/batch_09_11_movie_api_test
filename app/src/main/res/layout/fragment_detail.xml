@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_movie_poster_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/tv_movie_title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_movie_rating_detail"
+            app:layout_constraintRight_toRightOf="@id/tv_movie_rating_detail"
+            app:layout_constraintBottom_toTopOf="@id/tv_movie_rating_detail"
+            tools:text=";lasdf;ladsf"/>
+        <TextView
+            android:id="@+id/tv_movie_rating_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_movie_release_detail"
+            app:layout_constraintRight_toRightOf="@id/tv_movie_release_detail"
+            app:layout_constraintBottom_toTopOf="@id/tv_movie_release_detail"
+            tools:text=";lasdf;ladsf"/>
+        <TextView
+            android:id="@+id/tv_movie_release_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text=";lasdf;ladsf"/>
+        <TextView
+            android:id="@+id/tv_movie_genre_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_movie_release_detail"
+            app:layout_constraintRight_toRightOf="@id/tv_movie_release_detail"
+            app:layout_constraintTop_toBottomOf="@id/tv_movie_release_detail"
+            tools:text=";lasdf;ladsf"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
